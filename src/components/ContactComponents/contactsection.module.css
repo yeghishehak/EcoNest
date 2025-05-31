@@ -13,7 +13,10 @@
 }
 
 .allContactSection {
-    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -77,6 +80,9 @@
 }
 
 @media (max-width: 310px) {
+    .h1 {
+        font-size: 230%;
+    }
     .allContactSection {
         font-size: 80%;
     }
