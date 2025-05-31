@@ -57,7 +57,7 @@ export default function ContactSection() {
                         className={styles.web}
                         />
                     </div>
-                    <h1>econest.vercel.app</h1>
+                    <h1>econest-rho.vercel.app</h1>
                 </div>
             </div>
         </section>
