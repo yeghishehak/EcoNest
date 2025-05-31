@@ -1,0 +1,157 @@
+.header {
+    position: fixed;
+    width: 100vw;
+    height: 105px;
+    border-bottom: solid rgb(123, 123, 123) 1px;
+    backdrop-filter: blur(10px);               /* blur effect */
+    z-index: 999;      
+}
+
+.headerDiv {
+    position: relative;
+    top: 10px;
+    display: flex;
+    left: 30px;
+    gap: 30px;
+}
+
+.logo {
+    transform: translate(0, 5px);
+}
+
+.econestText {
+  position: relative;
+  z-index: 2;
+  font-family: "Fascinate", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.buttonsContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 30px;
+    bottom: 45px;
+}
+
+.menuBtn {
+    display: none;
+}
+
+.headingbuttons {
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+    font-size: 125%;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    transition: all 0.3s ease;
+    border-bottom: transparent 1px solid;
+}
+
+
+.buttonsContainer .headingbuttons::before {
+    content: '';
+    display: block;
+    position: relative;
+    height: 2px;
+    width: 60px 200px 300px;
+    background-color: #1c7847;
+    transition: all 0.4s ease;
+    top: 28px;
+    right: 0;
+    transform: scaleX(0);
+}
+
+.buttonsContainer .headingbuttons:hover::before {
+    transform: scaleX(1);
+    background-color: #1c7847;
+}
+
+.buttonsContainer .headingbuttons:hover {
+    color: #393939;
+    cursor: pointer;
+}
+
+@media (min-width: 1734px) {
+    .buttonsContainer {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 893px) {
+    .buttonsContainer .headingbuttons::before {
+        display: none;
+    }
+    
+    .headingbuttons {
+        position: relative;
+        left: 60px;
+        top: 100px;
+        font-size: 120%;
+        transition: none;
+    }
+
+    .menuContainerHidden {
+        visibility: hidden;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 1px 2px black;
+        z-index: 1;
+        height: 100px;
+        width: 100vw;
+        right: 0px;
+        top: 105px;
+        z-index: 1;
+    }
+
+    .menuContainerVisible {
+        visibility: visible;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 1px 2px black;
+        z-index: 1;
+        height: 100px;
+        width: 100vw;
+        right: 0px;
+        top: 105px;
+        z-index: 1;
+    }
+
+    .menuBtn {
+        visibility: visible;
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 47px;
+        color: black;
+        transform: scale(3);
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .buttonsContainer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        right: 45px;
+        bottom: 60px;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 342px) {
+    .menuBtn {
+        display: none;
+    }
+}

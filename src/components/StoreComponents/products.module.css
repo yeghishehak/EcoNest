@@ -1,0 +1,149 @@
+.welcomeTextBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 150px;
+}
+
+@keyframes welcomeTextFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);        
+    }
+}
+
+.welcomeText {
+    opacity: 0;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    font-size: 250%;
+    animation: welcomeTextFadeIn 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes coolAnimationProducts {
+    from {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateY(5%);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);        
+    }
+}
+
+.ourProducts {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    animation: coolAnimationProducts 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.products {
+    width: 300px;
+    height: 350px;
+    background-color: rgb(0, 61, 0);
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 150%;
+    margin: 50px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    text-shadow: 0px 0px 20px green;
+    background-repeat: no-repeat;
+}
+
+.products:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 100px green;
+}
+
+.h1Product {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 270px;
+    font-size: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 30px white;
+}
+
+.box1 {
+    background-image: url('/storeImages/bag.png');
+    background-size: 500px 470px;
+    background-position: calc(50% - 15px) -80px;
+}
+
+.box2 {
+    background-image: url("/storeImages/soapDish.png");
+    background-size: 500px 470px;
+    background-position: 55% -80px;
+}
+
+.box3 {
+    background-image: url("/storeImages/bathroomitem.png");
+    background-size: 400px 370px;
+    background-position: 50% -60px;
+}
+.bathroomItem {
+    margin-top: 250px;
+}
+
+
+.box4 {
+    background-image: url("/storeImages/foodWrap.png");
+    background-size: 400px 370px;
+    background-position: calc(50% - 7px) -60px;
+}
+
+.box5 {
+    background-image: url("/storeImages/spoonge.png");
+    background-size: 400px 370px;
+    background-position: calc(50% - 8px) -30px;
+}
+
+.box6 {
+    background-image: url("/storeImages/soapContainer.png");
+    background-size: 400px 370px;
+    background-position: calc(50% - 3px) -40px;
+}
+
+.box7 {
+    background-image: url("/storeImages/cleaningCloth.png");
+    background-size: 400px 370px;
+    background-position: calc(50% - 3px) -40px;
+}
+
+
+
+@media (max-width: 430px) {
+    .ourProducts{
+        gap: 50px;
+    }
+    .products {
+        margin: 0;
+    }
+    .box7 {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 286px) {
+    .h1Product {
+        font-size: 80%;
+    }
+}

@@ -1,0 +1,48 @@
+@keyframes aboutusAnimation {
+    from {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateY(5%);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);        
+    }
+}
+
+.aboutusDiv {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(5%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 140px;
+    animation: aboutusAnimation 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+.aboutusText {
+    font-size: 200%;
+    font-family: "Saira Stencil One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.aboutusDescription {
+    font-family: "Emblema One", system-ui;
+    font-style: normal;
+    width: 800px;
+    font-size: 120%;
+    text-align: center;
+    font-weight: 500;
+}
+
+@media (max-width: 836px) {
+    .aboutusDescription {
+        width: 90%;
+    }
+}
