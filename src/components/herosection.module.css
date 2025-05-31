@@ -50,11 +50,23 @@
 }
 
 .button {
+  position: relative;
   padding: 17px;
   outline: none;
   border: none;
   cursor: pointer;
   border-radius: 50px;
+}
+
+@media (max-width: 292px) {
+  .buttonsBox {
+    gap: 3px;
+  }
+
+  .button {
+    transform: scale(0.9);
+    right: 7px;
+  }
 }
 
 .span {

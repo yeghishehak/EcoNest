@@ -150,8 +150,17 @@
 }
 
 
-@media (max-width: 342px) {
-    .menuBtn {
-        display: none;
+@media (max-width: 358px) {
+    .headerDiv {
+        transform: scale(0.7);
+        left: -30px;
+    }
+
+    .buttonsContainer {
+        gap: 5px;
+    }
+
+    .headingbuttons {
+        font-size: 100%;
     }
 }
