@@ -37,11 +37,11 @@ export default function Header() {
             <Link href="/home">
               <button className={`${styles.home} ${styles.headingbuttons}`}>Home</button>
             </Link>
-            <Link href="/store">
-              <button className={`${styles.store} ${styles.headingbuttons}`}>Store</button>
-            </Link>
             <Link href="/about">
               <button className={`${styles.about} ${styles.headingbuttons}`}>About</button>
+            </Link>
+            <Link href="/store">
+              <button className={`${styles.store} ${styles.headingbuttons}`}>Store</button>
             </Link>
             <Link href="/contact">
               <button className={`${styles.contact} ${styles.headingbuttons}`}>Contact</button>
